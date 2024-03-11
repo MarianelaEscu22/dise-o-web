@@ -1,1 +1,1 @@
-# dise-o-web
+# curso-web
