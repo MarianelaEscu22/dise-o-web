@@ -9,7 +9,7 @@ a[href^="#"] {
 
 /* Links con "ejemplo" en la URL */
 a[href*="ejemplo"] {
-  background-color: silver;
+  background-color: rgb(192, 192, 192);
 }
 
 /* link con la palabra "sinmayusculas"en la URL,
