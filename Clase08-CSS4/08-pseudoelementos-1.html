@@ -1,5 +1,10 @@
-Titulo: ejemplo
-Etiqueta: style Texto: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo</title>
+    <style>
         .parrafo {
             font-size: 36px;
         }
@@ -8,12 +13,19 @@ Etiqueta: style Texto:
         .parrafo::first-letter{color:red;} 
 
         /* parrafo::first-line{background-color: lightgreen;} */
+        .parrafo::first-line{background-color: lightgreen; } 
 
         /* parrafo::selection{background-color: lightsalmon;} */
+        .parrafo::selection{background-color: lightsalmon;}
 
         /* parrafo::before{ content:"(Antes) ";}    */
+        .parrafo::before{ content:"¡¡¡";}
         /* parrafo::after{ content:" (Después)";}   */
-
-Etiqueta: p class="parrafo" Texto: Texto de ejemplo.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, minima?
-
-Etiqueta: p Texto: Las opciones son varias, recuerda consultar el material del aula virtual o los enlaces recomendados en las presentaciones de la clase para aprender más!
+        .parrafo::after{ content:" !!!";}
+    </style>
+</head>
+<body>
+    <p class="parrafo">Texto de ejemplo.  <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, minima?</p>
+    <p>Las opciones son varias, recuerda consultar el material del aula virtual o los enlaces recomendados en las presentaciones de la clase para aprender más!</p>
+</body>
+</html>
