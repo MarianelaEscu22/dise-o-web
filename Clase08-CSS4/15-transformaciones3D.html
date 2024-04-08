@@ -1,5 +1,10 @@
-Titulo: Transformaciones en 3D
-Etiqueta: style Texto: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones en 3D</title>
+    <style>
         body {background-color: lightskyblue;  }
 
         
@@ -19,28 +24,28 @@ Etiqueta: style Texto:
         }
 
         .cubo div:nth-child(1) { /* Frente, lo acerco 50px en Z */
-            /* transform: translateZ(50px);          */
-            background-color: brown;
+            transform: translateZ(50px);        
+            background-color: lightblue;
         }
         .cubo div:nth-child(2) { /* Lo giro 180 en X, y como se va hacia atrás, lo traigo 50px en Z */
-            /* transform: rotateX(180deg) translateZ(50px); */
-            background-color: pink;
+             transform: rotateX(180deg) translateZ(50px); 
+            background-color: rgb(225, 225, 250);
         }
         .cubo div:nth-child(3) { /* Lo giro -90 en X, y como se va hacia atrás, lo traigo 50px en Z */
-            /* transform: rotateY(-90deg) translateZ(50px); */
-            background-color: lightcoral;
+          transform: rotateY(-90deg) translateZ(50px); 
+            background-color: rgb(252, 245, 245);
         }
         .cubo div:nth-child(4) { /* Lo giro 90 en Y, y como se va hacia atrás, lo traigo 50px en Z */
-            /* transform: rotateY(90deg) translateZ(50px); */
+           transform: rotateY(90deg) translateZ(50px);
             background-color: lightgreen;
         }
         .cubo div:nth-child(5) { /* Lo giro 90 en X, y como se va hacia atrás, lo traigo 50px en Z */
             transform: rotateX(90deg) translateZ(50px);
-            background-color: orange;
+            background-color: rgb(102, 139, 240);
         }
         .cubo div:nth-child(6) { /* Lo giro -90 en X, y como se va hacia atrás, lo traigo 50px en Z */
             transform: rotateX(-90deg) translateZ(50px);
-            background-color: red;
+            background-color: blue;
         }        
 
         .cubo:hover{ /* Al pasar el mouse, lo roto sobre X e Y */
@@ -52,20 +57,19 @@ Etiqueta: style Texto:
             width: 100px;        /*El cubo será de 100x100x100px */
             height: 100px;            
         }
-
-Etiqueta: h3 Texto: Transformaciones en 3D
-
-Etiqueta: div id="envoltura"
-Etiqueta: div class="cubo"
-            <!-- Frente-->
-            Etiqueta: div Texto: Frente
-            <!-- Fondo-->
-            Etiqueta: div Texto: Fondo
-            <!-- Izquierda-->
-            Etiqueta: div Texto: Izquierda
-            <!-- Derecha-->
-            Etiqueta: div Texto: Derecha
-            <!-- Arriba-->
-            Etiqueta: div Texto: Arriba
-            <!-- Abajo-->
-            Etiqueta: div Texto: Abajo
+    </style>
+</head>
+<body>
+    <h3>Transformaciones en 3D</h3>
+    <div id="envoltura">
+        <div class="cubo">
+            <div>Frente</div>
+            <div>Fondo</div>
+            <div>Izquierda</div>
+            <div>Derecha</div>
+            <div>Arriba</div>
+            <div>Abajo</div>
+        </div>
+    </div>
+</body>
+</html>
