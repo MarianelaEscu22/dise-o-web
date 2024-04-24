@@ -9,16 +9,21 @@
     <script>
         var n1 = prompt ("ingrese un numero");
         var n2 = prompt ("ingrese otro numero");
+        var n3 = prompt ("ingrese otro numero mas")
        
         document.write("Primer Nro " + n1);
         document.write(" Segundo Nro " + n2);
+        document.write(" Tercer Nro " + n3);
         document.write(" el numero mayor es ..." ) 
-        if (n1 > n2) {
-        document.write(n1);
+        if (n1 > n2 && n1 > n3) {
+            document.write(n1);
         } else {
-        document.write(n2);
-        }
-    </script>
+            if (n2 > n3) {
+                document.write(n2);
+            } else {
+                document.write(n3);
+            }                   
+            }
+    </script> 
 </body>
-<!--para poner el palito recto"|" hay que pulsar la a chiquita que esta al lado del 1-->
 </html>
