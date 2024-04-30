@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var frase = prompt("ingrese un texto...");
+        var contador = 0;
+        var contadorA = 0;
+        var contadorE = 0;
+        var contadorI = 0;
+        var contadorO = 0;
+        var contadorU = 0;
+        
+        document.write(frase.length + "SON LAS LETRAS <BR>");
+        
+        for (i=0; i<frase.length; i++){
+            if (frase[i]=== "A" || frase[i]=== "E" || frase[i]=== "I" || frase[i]=== "O" || frase[i]=== "U"){
+                contador++;
+                document.write(frase[i]);
+            }
+            if (frase[i]=== "A"){
+                contadorA++;
+            }
+            if (frase[i]=== "E"){
+                contadorE++;
+            }
+            if (frase[i]=== "I"){
+                contadorI++;
+            }
+            if (frase[i]=== "O"){
+                contadorO++;
+            }
+            if (frase[i]=== "U"){
+                contadorU++;
+            }
+        }
+        document.write("<br> la frase ingresada es: " + frase + "<br>");
+        document.write(contadorA + "A <br>");
+        document.write(contadorE + "E <br>");
+        document.write(contadorI + "I <br>");
+        document.write(contadorO + "O <br>");
+        document.write(contadorU + "U <br>");
+    </script>
+</body>
+</html>
