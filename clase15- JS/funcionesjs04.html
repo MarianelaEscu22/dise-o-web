@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+        var nro;
+        var suma=0;
+        var cant=0;
+
+        function promedio(){
+            do{
+                nro=prompt("ingrese un numero");
+                if(Number(nro)==nro){
+                    nro=Number(nro);
+                    suma= suma+ nro;
+                    cant++;
+                }else{
+                    if(nro !=undefined){
+                        alert(nro + "no es un numero");
+                    }
+                }
+            } while(nro !==-1);
+            document.write(suma/cant);
+            return suma/cant; 
+        }
+        var j= promedio();
+        function siguiente(n){
+            return n+1;
+        }
+        var sigu=  siguiente(j);
+        document.write("<br>" + sigu);
+    </script>
+</body>
+</html>
