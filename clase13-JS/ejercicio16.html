@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+<<<<<<< HEAD
         var n1 = prompt ("ingrese un numero");
         var n2 = prompt ("ingrese un numero");
         var menor;
@@ -26,3 +27,24 @@
     </script>
 </body>
 </html>
+=======
+        var n1 = prompt("Escribe un número");
+        var n2 = prompt("Escribe otro número");
+        var menor;
+        var i;
+        document.write("los numeros ingresados son " + n1 +"," + n2 + "<br>");
+            if (n1 < n2) {
+                menor = n1;
+                } else {
+                    menor = n2;
+                    }
+            for (i=2; i < menor / 2; i++) {
+                if (n1 % i === 0 && n2 % i === 0) {
+                document.write(i,", ");
+                }
+            }
+    </script>
+</body>
+</html>
+ 
+>>>>>>> f358cf4c386f13d0d83db1415c43b22222c213fb
