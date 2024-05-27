@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numrep= prompt("ingrese un numero de repeticiones del 1 al 10");
+        if(Number(numrep)== numrep){
+            if(numrep >=0 && numrep <=10){
+                var rep,i;
+
+            for(i=numrep; i>=0; i--){
+                for(rep=i; rep>0 ;rep--){
+                    document.write(i);
+                }
+                document.write("<br>");
+            }
+        }else{
+            alert("el numero introducido no es valido");
+        }
+    }else{
+        alert("no has insertado ningun numero");
+    }
+    
+    </script>
+</body>
+</html>

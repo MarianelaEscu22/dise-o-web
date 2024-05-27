@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+             var x= parseInt(prompt("ingrese un numero"));
+            
+         
+         function siguiente(x){
+            return x+1; 
+    }
+         function doble(x){
+            return x*2;   
+    }
+         function cuadrado(x){
+         return x*x;
+     }
+            
+
+     function imprimirElDobleDelSiguienteAlCuadrado(x){
+        document.write(siguiente(x)+ "<br>");
+        document.write(doble(siguiente(x))+ "<br>");
+        document.write(cuadrado(doble(siguiente(x))));
+     }
+     imprimirElDobleDelSiguienteAlCuadrado(x);
+
+    </script>
+</body>
+</html>

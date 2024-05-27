@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var letra= " ";
+       var resto =0;
+       do{
+            var nro= prompt("introduce tu DNI");
+            
+            if(Number(nro)== nro){
+                nro= Number(nro);
+                if(nro >= 0 || nro <= 99999999){
+                    resto = nro % 23;
+                    document.write(resto);
+                    switch (resto){
+                        case 0:resto
+                            letra= "T";
+                            break;
+                        case 1:resto
+                            letra= "R";
+                            break;
+                        case 2:resto
+                            letra= "W";
+                            break;
+                        case 3:resto
+                            letra= "A";
+                            break;
+                        case 4:resto
+                            letra= "G";
+                            break;
+                        case 5:resto
+                            letra= "M";
+                            break;
+                        case 6:resto
+                            letra= "Y";
+                            break;
+                        case 7:resto
+                            letra= "F";
+                            break;
+                        case 8:resto
+                            letra= "P";
+                            break;
+                        case 9:resto
+                            letra= "D";
+                            break;
+                        case 10:resto
+                            letra= "X";
+                            break;
+                        case 11:resto
+                            letra= "B";
+                            break;
+                        case 12:resto
+                            letra= "N";
+                            break;
+                        case 13:resto
+                            letra= "J";
+                            break;
+                        case 14:resto
+                            letra= "Z";
+                            break;
+                        case 15:resto
+                            letra= "S";
+                            break;
+                        case 16:resto
+                            letra= "Q";
+                            break;
+                        case 17:resto
+                            letra= "V";
+                            break;
+                        case 18:resto
+                            letra= "H";
+                            break;
+                        case 19:resto
+                            letra= "L";
+                            break;
+                        case 20:resto
+                            letra= "C";
+                            break;
+                        case 21:resto
+                            letra= "K";
+                            break;
+                        case 22:resto
+                            letra= "E";
+                            break;
+                        default:resto
+                            alert("Numero Erroneo");
+                    }
+                }
+                document.write("Numero: " + nro + ", Letra: " + letra + "<br>");
+            }else{
+                if(nro !=undefined){
+                    alert(nro + "no es un numero");
+                }
+            }
+        }
+        while(nro != undefined);
+   
+    </script>
+</body>
+</html>
