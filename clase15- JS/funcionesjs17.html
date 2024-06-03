@@ -37,8 +37,20 @@
                 }
                 return cantidad
             }
-            document.write("El mes tiene " + cantidadDias(dia,mes,año));
 
+            function diaAnterior(dia){
+                return dia-1
+            }
+
+            var diaAnteriorfinal=0;
+
+            if(dia>1){
+                diaAnteriorfinal = diaAnterior(dia)
+            }else if(dia == 1){
+                mes = mes - 1
+                diaAnteriorfinal =cantidadDias(dia,mes,año)
+            }
+            document.write("El dia anterior es " + diaAnteriorfinal + "/" + mes + "/" + año );
     </script>
 </body>
 </html>

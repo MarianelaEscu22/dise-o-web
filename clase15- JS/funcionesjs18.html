@@ -15,8 +15,6 @@
           var mes= parseInt(fechaSeparada[1]);
           var año= parseInt(fechaSeparada[2]);
 
-          console.log(fechaSeparada);
-          console.log(añoBisiesto);
           console.log(dia + '/' + mes + '/' + año);
 
           function esbisiesto(año){
@@ -37,8 +35,14 @@
                 }
                 return cantidad
             }
-            document.write("El mes tiene " + cantidadDias(dia,mes,año));
-
+            function ultimoDiaDelMes(dia,mes,año){
+                ultimodia= cantidadDias(dia,mes,año);
+                return ultimodia
+            }
+                      
+            document.write("El dia ingresado es " + dia + "/"+ mes + "/" + año+ "<br>");
+            document.write("El ultimo dia es " + ultimoDiaDelMes(dia,mes,año) + "/"+ mes + "/" + año);
+    
     </script>
 </body>
 </html>

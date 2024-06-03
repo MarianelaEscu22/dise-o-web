@@ -7,23 +7,17 @@
 </head>
 <body>
     <script>
-        var año =prompt("ingrese el año para saber si es bisiesto o no");
-        document.write("el año ingresados es: " + " " + año);
-
-        function bisiesto(año){
-            if(año%100===0){
-                if(año%400===0){
+       var año =prompt("ingrese el año para saber si es bisiesto o no");
+          document.write("el año ingresados es: " + " " + año);
+        
+         function bisiesto(año){
+            if((año%100===0 && año%400===0)|| año%4===0){
                     document.write  ("<b> Si es Bisiesto</b>");
                 }
-            }else{
-                if (año%4===0){
-                    document.write("<b>Si es Bisiesto</b>");
-                }else {
-                    document.write("<b> No es Bisiesto</b>");
+            else{document.write("<b> No es Bisiesto</b>");
                 }
             }
-        }
-        bisiesto(año);
+            bisiesto(año);
     </script>
 </body>
 </html>
