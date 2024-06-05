@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let minuscula= "mi hermoso principe felipe";
+       
+        function pasarMay(minuscula){
+
+           let splitminuscula = minuscula.split(" ");
+
+           let mayussplitminuscula= splitminuscula.map(palabra =>{return palabra[0].toUpperCase() + palabra.slice(1);})
+           for ( i=0; i < mayussplitminuscula.length; i++){
+           document.write(mayussplitminuscula[i] + " ");
+        }
+    }
+    
+        pasarMay(minuscula);
+    </script>
+</body>
+</html>
