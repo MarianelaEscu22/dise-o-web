@@ -6,12 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <script>;
+    <script>
+        let palabraMasLarga = cadena => {
+        let palabraMasLarga = cadena[0];
     
+    for (let palabra of cadena) {
+        if (palabra.length >= palabraMasLarga.length) {
+            palabraMasLarga = palabra;
+        }
+    }
+    return palabraMasLarga;
+};
+        let cadena = "Tutorial de desarrollo web para principiantes";
+        let separadaPorEspacios = cadena.split(" ");
+        let palabra= palabraMasLarga(separadaPorEspacios);
+        document.write(palabra);
     </script>
 </body>
 </html>
-
-
-
-

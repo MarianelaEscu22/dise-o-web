@@ -7,14 +7,30 @@
 </head>
 <body>
     <script>
-        var letras=["w","e","b","m","a","s","t","e","r"];
+        //esta funcion (bubbleSort) es fija, no hay que modificarla
+        const bubbleSort = (arr) => {
+         let swapped; 
 
-        function orden(letras){
-            for ( i=0; i < letras.length; i++){
-            document.write(letras.sort()[i]);
-        }
-    }
-        orden(letras);
-    </script>
+             do {
+                 swapped = false;
+                 for (let i = 0; i < arr.length - 1; i++) {
+                 if (arr[i] > arr[i + 1]) {
+                    let temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                     swapped = true;
+                 }
+                 }
+             } while (swapped);
+         return arr;
+         
+         };
+        
+        let letras="webmaster";
+        let letritas= letras.split("")
+        document.write(bubbleSort(letritas).join(""));
+             
+ 
+ </script>
 </body>
 </html>
