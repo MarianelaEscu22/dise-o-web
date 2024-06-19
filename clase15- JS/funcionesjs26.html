@@ -7,14 +7,16 @@
 </head>
 <body>
     <script>
-        var invert= ["1","2","3","4","5"];
+        var invert= "123456";
+        let resultado
 
         function invertir(invert){
-            for ( i=0; i < invert.length; i++){
-             document.write(invert.reverse()[i]);
+
+             resultado= invert[5]+invert[4]+invert[3]+invert[2]+invert[1]+invert[0];
+                
+             document.write(resultado);
         }
-          
-        }
+
         invertir(invert);
     </script>
 </body>

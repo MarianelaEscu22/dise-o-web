@@ -10,11 +10,14 @@
       const edades =new Array(50,22,80,33,38,19,21)
             document.write("las edades pares son: <br>")
        
-      for(i=0; i < edades.length; i++ ){
+      function pares(edades){
+            for(i=0; i < edades.length; i++ ){
            if(edades[i] % 2 == 0 ){
              document.write(edades[i]+ ",")
            }   
-        }      
+        }
+       }  
+       pares(edades);
     </script>
 </body>
 </html>
